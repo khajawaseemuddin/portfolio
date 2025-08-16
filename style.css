@@ -1,0 +1,252 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00adb5;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 173, 181, 0.7), rgba(57, 62, 70, 0.7)), url("assets/images/waseem.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.hero h1 span {
+    color: #ffdd59;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #ffdd59;
+    color: #111;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ffc048;
+}
+
+section {
+    padding: 5rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background: #00adb5;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #f7f7f7;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact .socials a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #00adb5;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        background: #111;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.filter-btns {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.2rem;
+    border: none;
+    background: #00adb5;
+    color: white;
+    margin: 0 0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.filter-btn:hover {
+    background: #028a91;
+}
+
+.filter-btn.active {
+    background: #ffdd59;
+    color: #111;
+}
+/* Dark mode styles */
+body.dark {
+    background: #121212;
+    color: #f5f5f5;
+}
+
+body.dark header {
+    background: #1f1f1f;
+}
+
+body.dark .nav-links a {
+    color: #f5f5f5;
+}
+
+body.dark .project-card {
+    background: #1e1e1e;
+    color: #f5f5f5;
+}
+
+body.dark .skills li {
+    background: #333;
+}
+
+body.dark .filter-btn {
+    background: #333;
+}
+
+body.dark .filter-btn.active {
+    background: #ffdd59;
+    color: #111;
+}
+
+body.dark footer {
+    background: #1f1f1f;
+}
+
+/* Dark mode button */
+.dark-btn {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.dark-btn:hover {
+    transform: scale(1.1);
+}
+

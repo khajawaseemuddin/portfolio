@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khaja Waseem Uddin | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Waseem</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+            <!-- Dark Mode -->
+            <button id="dark-mode-toggle" class="dark-btn">🌙</button>
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I’m <span>Khaja Waseem Uddin</span></h1>
+            <p>Frontend Developer | AI Enthusiast</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate frontend developer who loves building responsive, 
+            user-friendly websites and exploring AI technologies. I enjoy turning ideas into reality with HTML, CSS, and JavaScript.
+        </p>
+        <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <!-- Filter Buttons -->
+    <div class="filter-btns">
+        <button class="filter-btn active" >All</button>
+        <button class="filter-btn" >Frontend</button>
+        <button class="filter-btn">AI</button>
+        <button class="filter-btn" >Python</button>
+    </div>
+
+    <div class="project-grid">
+        <!-- AutoChallan -->
+        <div class="project-card fade-in" data-category="ai">
+            <img src="assets/images/autochallan.jpeg" alt="AutoChallan Project">
+            <h3>AutoChallan</h3>
+            <p>Real-time vehicle detection, speed estimation, and automated challan generation using OpenCV.</p>
+            <a href="https://github.com/khajawaseemuddin/VehiclePrototype" target="_blank" class="btn">GitHub</a>
+            <a href="#" class="btn">Live Demo</a>
+        </div>
+
+        <!-- Portfolio Website -->
+        <div class="project-card fade-in" data-category="frontend">
+            <img src="assets/images/portfolio.bmp" alt="Portfolio Website">
+            <h3>Portfolio Website</h3>
+            <p>A responsive, modern personal portfolio built with HTML, CSS, and JavaScript.</p>
+            <a href="https://github.com/yourusername/portfolio" class="btn">GitHub</a>
+            <a href="https://yourusername.github.io/portfolio" class="btn">Live Demo</a>
+        </div>
+
+        <!-- Python Utility Scripts (Coming Soon) -->
+        <div class="project-card fade-in" data-category="python">
+            <img src="assets/images/python-scripts.jpg" alt="Python Utility Scripts">
+            <h3>Python Utility Scripts (Coming Soon)</h3>
+            <p>A collection of useful Python scripts like PDF merger, file organizer, and expense tracker.</p>
+            <a href="#" class="btn disabled">GitHub (Soon)</a>
+            <a href="#" class="btn disabled">Live Demo (Soon)</a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.email@example.com">waseemu446@gmail.com</a></p>
+        <div class="socials">
+            <a href="https://github.com/khajawaseemuddin">GitHub</a>
+            <a href="https://www.linkedin.com/in/khaja-waseem-uddin-a50b22362/">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Khaja Waseem Uddin | Made with ❤️</p>
+    </footer>
+
+</body>
+</html>
